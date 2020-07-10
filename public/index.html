@@ -1,0 +1,20 @@
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>English-to-Japanese on Movie</title>
+    <h1>英語から日本語の文字起こし</h1>
+  </head>
+  <body>
+    <form method="post" action="ytdl">
+      <p>Youtube URL: ※60分以下である必要があります<br>
+        <input type="text" name="url" id="url"></input></p>
+        <input type="submit" value="Start" onClick="double(this)">
+    </form>
+    <script>
+    function double(btn){
+      btn.disabled=true;
+      btn.form.submit();
+    }
+    </script>
+  </body>
+</html>
